@@ -22,7 +22,9 @@
     <main>
         <section id="contact">
             <h2>Give Me A Ring</h2>
-            <form action="#" method="POST">
+            
+<form action="#" method="POST">
+                
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" minlength="2" required>
@@ -32,6 +34,29 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
+                
+                <div>
+                    <label for="topic">What's this about?</label>
+                    <select id="topic" name="topic">
+                        <option value="job">Job Info</option>
+                        <option value="hardware">Hardware / IT Troubleshooting</option>
+                        <option value="coding">Powershell & HTML Projects</option>
+                        <option value="other">I have a different question.</option>
+                        
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <div>
+                        <input type="radio" id="contact-email" name="preferred-contact" value="email">
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                </fieldset>
                 
                 <div>
                     <label for="message">Message:</label>
